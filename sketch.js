@@ -42,6 +42,7 @@ function setup() {
 	groundObject=new ground(width/2,600,width,20);
 
   //create launcherObject here
+    launcherObject = new launcher(stoneObj.body,{x:235,y:420});
 
 
 	Engine.run(engine);
@@ -72,7 +73,6 @@ function draw() {
   stoneObj.display();
   groundObject.display();
   // display launcher object here
-    launcherObject = new launcher(stoneObj.body,{x:235,y:420});
 launcherObject.display();
 
 
